@@ -48,5 +48,7 @@ To check the correlation of each input feature with the output look at the plots
 
 ![alt text](https://github.com/Acelhaka/AIFinalProject/blob/master/Benign%20vs%20Malignant%20image.png)
 
-
+A boxplot is used to look for possible outliers of each feature.
+![alt text] ()
+Overall seems like features 11-19 (standard_error columns) have a few outliers, however not significally affecting our prediction so I did not remove them.  
 
