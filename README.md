@@ -53,3 +53,6 @@ A boxplot is used to look for possible outliers of each feature.
 ![alt text](https://github.com/Acelhaka/AIFinalProject/blob/master/BoxPlot.PNG)
 Overall seems like features 11-19 (standard_error columns) have a few outliers, however not significally affecting our prediction so I did not remove them.  
 
+Output features: Benign cell = 357 and Malignant = 212
+![alt text](https://github.com/Acelhaka/AIFinalProject/blob/master/Histogram.PNG)
+
