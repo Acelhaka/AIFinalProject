@@ -39,7 +39,7 @@ Missing attribute values: none
 
 Class distribution: 357 benign, 212 malignant
 ```````````````````
-## 1 Data Analysis
+## 1- Data Analysis
 To check the correlation of each input feature with the output look at the plots in the project.
 
 #### Comparisison of a Benign vs Malignant tumor cell in an image
