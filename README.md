@@ -39,7 +39,8 @@ Missing attribute values: none
 
 Class distribution: 357 benign, 212 malignant
 ```````````````````
-Comparisison of a Benign vs Malignant tumor cell in an image
+#### Comparisison of a Benign vs Malignant tumor cell in an image
+
 (Useful image to undestand the features used in the dataset to build my model)
 
 ![alt text](https://github.com/Acelhaka/AIFinalProject/blob/master/Benign%20vs%20Malignant%20image.png)
