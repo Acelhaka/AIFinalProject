@@ -38,7 +38,6 @@ All feature values are recoded with four significant digits.
 Missing attribute values: none
 `````````````
 Class distribution: 357 benign, 212 malignant
+![alt text]()
 
 
-
-https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiL1snOzfnhAhURT6wKHSn6D2gQjRx6BAgBEAU&url=https%3A%2F%2Fhpathy.com%2Fcause-symptoms-treatment%2Ftumors-cancer%2F&psig=AOvVaw3EZoGKiUzCKZY6rLacF6JF&ust=1556774925229715
