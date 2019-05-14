@@ -57,3 +57,13 @@ Overall seems like features 11-19 (standard_error columns) have a few outliers, 
 Output features: Benign cell = 357 and Malignant = 212
 ![alt text](https://github.com/Acelhaka/AIFinalProject/blob/master/Histogram.PNG)
 
+
+##2- Neural network with a linear regression vs logistic regression
+Using a SGD (sigmoid) optimizer because it works well for shallow networks, having binary-crossentropy for loss since it is binary classification and keeping track of metrics using accuracy.
+Because it is a binary classification, linear regression does not work well compared to logistic regression. Output in Logistic regression is a binary value (0 or 1) and on Linear regression it predicts integer values, dependent variable is continuous. It can have any one of an infinite number of possible values.
+
+
+
+
+For the first neural network using a linear activation
+
