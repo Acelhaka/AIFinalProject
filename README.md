@@ -69,5 +69,45 @@ Because it is a binary classification, linear regression does not work well comp
 
 ![alt text](https://github.com/Acelhaka/AIFinalProject/blob/master/linear%20vs%20logistic.PNG)
 
-For the first neural network using a linear activation
 
+## 2&3- Performance difference when linear activation used instead of sigmoid (and vice versa)
+
+## Linear Activation
+* At the beginning I used a linear regresssion model, linear avtivation with 1 dense layer.
+Epoch size = 128 and Batch size = 32, layer = 1, activation = linear
+acc = 0.1450 and val_acc = 0.1953. 
+(acc is the accuracy of a batch of training data and val_acc is the accuracy of a batch of testing data)
+With this model Accuracy is very low from what we are looking, from a rate of 0-1, 0.1953 is not what we are aiming for. 
+These results clearly tell us that a linear model is not the right one for our dataset and for the prediction 
+that we are trying to get.
+![alt text] 
+* Increasing the batch size to 250 and batch size to 64 still did not improve our predictions. Actually val_acc dropped by .02. (I am guessing that maybe overfitting is happening here since the dataset is not as large)
+* Building a bigger model, with 32 dense layers, and 16 dense layers in between still did not improve our accuracy.
+
+## Sigmoid activation
+
+* First simple model created with 1 dense layer and epochs = 128, batch size = 32,
+accuracy improved drastically. 
+acc = 09775 and val_acc = 0.9822  (one of the best prediction I attained)
+![alt text] ()
+
+* Increasing the number of epochs to 256 and batch size to 64 increased my accuracy to 0.9645
+ and acc = 0.9750  (loss = 0.0885) and also decreased loss
+ ![alt test] ()
+ 
+ ## Bigger models
+ * Model with 2 hidden layers, when activation for the first two layers is linear and the third is sigmoid, did not result with a better accuracy (val_ acc = 0.9704) than the simple logistic model.
+ 
+ * Changing one of the hidden layers into RELU acivation slightly improved our accuracy. 
+    val_acc = 0.9764 , acc = 0.9850, loss = 0.0437
+ * Changing the first layers into RELU activation and keeping the last one sigmoid resulted with
+    loss = 0.0335 (lower than previous models) loss = 0.0335 and val_acc = 0.9704
+    
+ ## Effort to code a function that represents my model.
+  Used a model with one layer. 
+  [!alt text] ()
+ 
+ 
+ 
+    
+    
