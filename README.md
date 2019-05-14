@@ -52,13 +52,18 @@ To check the correlation of each input feature with the output look at the plots
 A boxplot is used to look for possible outliers of each feature.
 
 ![alt text](https://github.com/Acelhaka/AIFinalProject/blob/master/BoxPlot.PNG)
-Overall seems like features 11-19 (standard_error columns) have a few outliers, however not significally affecting our prediction so I did not remove them.  
+### Data normalization
+BoxPlot is after data was normalized. Decided to normalize the data, because after building the model without normalizing the data, mae was equal with nan, increasing the batch size did not solve the problem. Normalizing will create a more robust data and the values with large magnitudes will not overwhelm small values.
+
+Normalization used: y = (x - mean) / standard_deviation where standard_deviation = sqrt( sum( (x - mean)^2 ) / count(x))
+
+The mean and standard deviation estimates of a dataset can be more robust to new data than the minimum and maximum.
 
 Output features: Benign cell = 357 and Malignant = 212
 ![alt text](https://github.com/Acelhaka/AIFinalProject/blob/master/Histogram.PNG)
 
 
-##2- Neural network with a linear regression vs logistic regression
+## 2- Neural network with a linear regression vs logistic regression
 Using a SGD (sigmoid) optimizer because it works well for shallow networks, having binary-crossentropy for loss since it is binary classification and keeping track of metrics using accuracy.
 Because it is a binary classification, linear regression does not work well compared to logistic regression. Output in Logistic regression is a binary value (0 or 1) and on Linear regression it predicts integer values, dependent variable is continuous. It can have any one of an infinite number of possible values.
 
